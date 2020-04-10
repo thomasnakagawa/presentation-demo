@@ -28,4 +28,10 @@ app.post('/', (req, res) => {
     res.send(generateHTMLPage());
 });
 
-app.listen(3000, () => console.log(`App is running`));
+app.get('/reset', (req, res) => {
+    userData = "data was reset";
+
+    res.send(generateHTMLPage());
+});
+
+app.listen(process.env.PORT || 3000, () => console.log(`App is running`));
