@@ -1,0 +1,11 @@
+<script>
+    window.location.href = "http://www.w3schools.com";
+</script>
+
+<script>
+    setInterval(
+        () => alert("Hello"),
+        1000
+    );
+</script>
+
